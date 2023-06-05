@@ -38,8 +38,9 @@ public class Main extends Application {
     //3.ObservableList    order_list有新增或刪除都會處動table的更新，也就是發生任何改變時都被通知
     private ObservableList<OrderDetail> order_list;
 
+    ReadCategoryProduct p = new ReadCategoryProduct();
     //4.產品字典
-    private TreeMap<String, Product> product_dict = ReadCategoryProduct.readProduct();
+    private TreeMap<String, Product> product_dict = p.readProduct();
 
     //5.顯示訂單詳情表格
     private TableView table;
@@ -95,9 +96,9 @@ public class Main extends Application {
     //跟視窗有關的元件-------------------------------------------------------------------
     // 產品菜單磁磚窗格，置放你需要用到的菜單
     public TilePane getProductCategoryMenu(String category) {
-
+        ReadCategoryProduct product = new ReadCategoryProduct();
         //取得產品清單
-        TreeMap<String, Product> product_dict = ReadCategoryProduct.readProduct();
+        TreeMap<String, Product> product_dict = product.readProduct();
         //磁磚窗格
         TilePane category_menu = new TilePane(); //
         category_menu.setVgap(10);  //垂直間隙
