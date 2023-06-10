@@ -1,3 +1,3 @@
 # javafx_pos_NKUST_mis_OOP_final_project
 
-<div style = "color = red">This project request javafx, please use java 1.8 or install javafx.</div>
+<font color = red>This project request javafx, please use java 1.8 or install javafx.
