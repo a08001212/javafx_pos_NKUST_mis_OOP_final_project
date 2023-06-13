@@ -336,7 +336,7 @@ public class Main extends Application {
 
         //塞入布景
         Scene scene = new Scene(root);
-        stage.setTitle("訂單表格");
+        stage.setTitle("中餐館pos");
         stage.setScene(scene);
         stage.show();
     } // start()
